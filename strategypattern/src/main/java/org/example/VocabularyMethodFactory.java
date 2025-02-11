@@ -18,6 +18,11 @@ public class VocabularyMethodFactory {
         map.put(VocabularyMethod.getId(SpacedRepetitionMethod.class),spacedRepetitionMethod);
     }
 
+    /**
+     * find method by methodId and learn
+     * @param lessonId
+     * @param methodId
+     */
     public void learn(String lessonId,String methodId){
         IVocabularyMethod method = map.get(methodId);
         if (method == null){
